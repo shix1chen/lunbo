@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<style type="text/css">
+
+	*{margin:0;padding:0}
+
+	#scroll{
+		width:920px;
+		height:260px;
+		background-color:#cff;
+		margin:100px auto;
+		overflow:hidden;
+	}
+
+
+	/*.b{
+		width: 100px;
+		height: 100px;
+		background: red;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}*/
+	
+	#scroll ul{
+		width:1860px;
+		height:150px; 
+		margin-top:62px;
+		overflow:hidden;
+	}
+
+	#scroll ul li{
+		float:left;
+		padding-right:10px;
+		list-style:none;
+	}
+
+	img{
+		width:300px;
+		height:260px;
+	}
+
+</style>
+
+<div id="scroll">
+	<ul>
+		<li><img src="1.jpg"/></li>
+		<li><img src="2.jpg"/></li>
+		<li><img src="3.jpg"/></li>
+		<li><img src="4.jpg"/></li>
+		<li><img src="5.jpg"/></li>
+		<li><img src="6.jpg"/></li>
+	</ul>
+	<!-- <div class="b"></div> -->
+</div>
+
+<script type="text/javascript" src='../jq.js'></script>
+<script type="text/javascript">
+<!--
+
+	function roll(){
+		$("#scroll ul").animate({marginLeft:'-310px'},1000,function(){
+			$("#scroll li").eq(0).remove().appendTo("#scroll ul");
+			$("#scroll ul").css("marginLeft",0);
+		});
+	}
+	setInterval(roll,3000);
+
+//-->
+</script>
